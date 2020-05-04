@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GoToStates" id="BYZ-38-t0r" customClass="ViewController" customModule="CovidIndia_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DFl-xH-gh6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.67809313540000005" green="0.83458763359999999" blue="0.62742060420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="paN-cC-iHm"/>
+                                    <constraint firstAttribute="width" constant="375" id="y52-RT-yCy"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cured:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="key-Ee-y4X">
+                                <rect key="frame" x="16" y="396" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="29"/>
+                                <color key="textColor" red="0.15121060610000001" green="0.31335002179999999" blue="0.32941609620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cases:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sq-5H-Pli">
+                                <rect key="frame" x="16" y="131" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="29"/>
+                                <color key="textColor" red="0.15121060610000001" green="0.31335002179999999" blue="0.32941609620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform.path.ecg" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-fB-9bj">
+                                <rect key="frame" x="142" y="29.5" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E6-Kt-8Vh">
+                                <rect key="frame" x="16" y="205" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.27058823529999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbB-3S-ka3">
+                                <rect key="frame" x="16" y="323" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.27058823529999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-mT-r2O">
+                                <rect key="frame" x="16" y="463" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.74117647060000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehd-Vj-JsF" userLabel="NextPageButton">
+                                <rect key="frame" x="98" y="580" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67809313540000005" green="0.83458763359999999" blue="0.62742060420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.15121060610000001" green="0.31335002179999999" blue="0.32941609620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="View Statewise Data"/>
+                                <connections>
+                                    <action selector="StateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWU-cO-6co"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Active Cases:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEv-ho-oeo">
+                                <rect key="frame" x="16" y="269" width="343" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="29"/>
+                                <color key="textColor" red="0.15121060610000001" green="0.31335002179999999" blue="0.32941609620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DFl-xH-gh6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0EP-4z-LMO"/>
+                            <constraint firstItem="DFl-xH-gh6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nzz-Mx-yvR"/>
+                            <constraint firstItem="DFl-xH-gh6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TEE-4b-ANQ"/>
+                            <constraint firstItem="DFl-xH-gh6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ydC-Yl-PPQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ActiveCasesLabel" destination="UbB-3S-ka3" id="hrk-vY-jpa"/>
+                        <outlet property="CuredLabel" destination="6sH-mT-r2O" id="FmK-Mz-9KO"/>
+                        <outlet property="StateWiseButton" destination="ehd-Vj-JsF" id="siD-OC-JqK"/>
+                        <outlet property="TotalCasesLabel" destination="8E6-Kt-8Vh" id="rLX-OM-oFB"/>
+                        <segue destination="bPy-Lr-zEj" kind="presentation" identifier="GoToStates" id="tKw-4n-Qo8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--States View Controller-->
+        <scene sceneID="Y6n-ok-asq">
+            <objects>
+                <viewController id="bPy-Lr-zEj" customClass="StatesViewController" customModule="CovidIndia_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrP-7c-HJG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Teal and Peach Summer Instagram Story" translatesAutoresizingMaskIntoConstraints="NO" id="Plm-XE-TTi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1440"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="gSr-5I-kV2"/>
+                                    <constraint firstAttribute="height" constant="667" id="xoe-3H-LRu"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This feature is currently being worked upon and will soon be added." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qdo-v5-Wwi">
+                                <rect key="frame" x="16" y="160" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" red="0.67809313540000005" green="0.83458763359999999" blue="0.62742060420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fap-Vi-7Sk">
+                                <rect key="frame" x="62" y="493" width="251" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97131806610000004" green="0.8643433452" blue="0.77645581959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Go back">
+                                    <color key="titleColor" red="0.0" green="0.74117647060000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoBackButtonPressed:" destination="bPy-Lr-zEj" eventType="touchUpInside" id="0W3-up-2Fe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Plm-XE-TTi" firstAttribute="top" secondItem="tgo-PW-6wf" secondAttribute="top" id="1tS-1u-iUt"/>
+                            <constraint firstItem="tgo-PW-6wf" firstAttribute="trailing" secondItem="Plm-XE-TTi" secondAttribute="trailing" id="JsH-pg-Q5C"/>
+                            <constraint firstItem="tgo-PW-6wf" firstAttribute="bottom" secondItem="Plm-XE-TTi" secondAttribute="bottom" id="h2S-1H-6PG"/>
+                            <constraint firstItem="Plm-XE-TTi" firstAttribute="leading" secondItem="tgo-PW-6wf" secondAttribute="leading" id="pzt-fw-XRJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tgo-PW-6wf"/>
+                    </view>
+                    <connections>
+                        <outlet property="GoBackButton" destination="fap-Vi-7Sk" id="P6l-BX-zNz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAu-gt-TaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Teal and Peach Summer Instagram Story" width="810" height="1440"/>
+        <image name="background" width="596" height="843"/>
+        <image name="waveform.path.ecg" catalog="system" width="64" height="62"/>
+    </resources>
+</document>
