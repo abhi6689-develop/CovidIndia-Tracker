@@ -12,6 +12,7 @@ struct CovidModel{
     let total: Int
     let active: Int
     let cured: Int
+    let statedata: [StateData]
     
     var totalString: String{
         return(String(total))

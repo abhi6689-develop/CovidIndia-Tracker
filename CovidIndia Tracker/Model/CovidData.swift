@@ -12,7 +12,13 @@ struct CovidData: Codable{
     let activeCases: Int
     let recovered: Int
     let totalCases: Int
+    let regionData: [RegionData]
 }
+struct RegionData: Codable{
+    let region: String
+    let totalInfected: Int
+}
+
 
 
 

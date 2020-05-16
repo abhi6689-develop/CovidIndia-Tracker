@@ -15,6 +15,7 @@ class ViewController: UIViewController, UpdateCovidData{
     @IBOutlet weak var CuredLabel: UILabel!
     @IBOutlet weak var StateWiseButton: UIButton!
     var covidManager = CovidManager()
+    var statedata1: [StateData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UpdateCovidData{
             self.TotalCasesLabel.text = data1.totalString
             self.ActiveCasesLabel.text = data1.activeString
             self.CuredLabel.text = data1.curedString
+            self.statedata1 = data1.statedata
             
         }
     }
@@ -42,5 +44,14 @@ class ViewController: UIViewController, UpdateCovidData{
     @IBAction func StateButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "GoToStates", sender: self)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToStates"
+        {
+            let destinationVC = segue.destination as! StatesViewController
+            destinationVC.states = statedata1
+            
+        }
+    }
+
 }
 

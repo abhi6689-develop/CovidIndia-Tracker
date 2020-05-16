@@ -17,6 +17,7 @@
 		0DC66FC6245F4CC200C60D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC66FC4245F4CC200C60D1F /* LaunchScreen.storyboard */; };
 		0DC66FCF245F614000C60D1F /* CovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC66FCE245F614000C60D1F /* CovidManager.swift */; };
 		0DC66FD3245F656400C60D1F /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC66FD2245F656400C60D1F /* CovidModel.swift */; };
+		0DC9F2C2246847C400EB3CF3 /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC9F2C1246847C400EB3CF3 /* StateData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0DC66FC7245F4CC200C60D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC66FCE245F614000C60D1F /* CovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidManager.swift; sourceTree = "<group>"; };
 		0DC66FD2245F656400C60D1F /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
+		0DC9F2C1246847C400EB3CF3 /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				0DC66FCE245F614000C60D1F /* CovidManager.swift */,
 				0DC66FD2245F656400C60D1F /* CovidModel.swift */,
 				0D3161CA245F72DC0088E589 /* CovidData.swift */,
+				0DC9F2C1246847C400EB3CF3 /* StateData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				0DC66FCF245F614000C60D1F /* CovidManager.swift in Sources */,
 				0DC66FBA245F4CC100C60D1F /* AppDelegate.swift in Sources */,
 				0D3161CB245F72DC0088E589 /* CovidData.swift in Sources */,
+				0DC9F2C2246847C400EB3CF3 /* StateData.swift in Sources */,
 				0DC66FD3245F656400C60D1F /* CovidModel.swift in Sources */,
 				0DC66FBC245F4CC100C60D1F /* SceneDelegate.swift in Sources */,
 			);

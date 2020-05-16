@@ -41,6 +41,7 @@ struct CovidManager{
         
     }
     func parseJSON(_ data1: Data) -> CovidModel?{
+        var state: [StateData] = []
         let decoder = JSONDecoder()
         do{
             let decodedData = try decoder.decode(CovidData.self, from: data1)
@@ -48,7 +49,14 @@ struct CovidManager{
             print(decodedData.totalCases)
             let active = decodedData.activeCases
             let cured = decodedData.recovered
-            let data1 = CovidModel(total: total, active: active, cured: cured)
+            for i in 0...32{
+                let region = decodedData.regionData[i].region
+                let TotalRegion = decodedData.regionData[i].totalInfected
+                let stateD = StateData(stateName: region, affected: TotalRegion)
+                state.append(stateD)
+            }
+
+            let data1 = CovidModel(total: total, active: active, cured: cured, statedata: state)
             return data1
         }
         catch{
@@ -60,4 +68,5 @@ struct CovidManager{
             
         }
     }
+
 
